@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="">
 	<style>
+		body {
+			font-size: small;
+		}
 		li {
 			list-style: none;
 		}
@@ -15,9 +18,16 @@
 				
 		}
 
-		.first {
-				flex-direction: row;
+		ul {
+		 display: flex;
+		 width: 300px;		 
 		}
+
+		li.left {
+			float: left;
+		}
+
+
 		
 	</style>
 </head>
@@ -32,9 +42,9 @@
 		</div>
 		<div class="first">
 			<ul>
-				<li>Amount Per Serving</li>
-				<li>Cereal</li>
-				<li>with 1/2 cup 1% milk</li>
+				<li class="left">Amount Per Serving</li>
+				<li class="middl">Cereal</li>
+				<li class="right">with 1/2 cup 1% milk</li>
 			</ul>		
 			<ul>
 				<li>Calories</li>
@@ -62,7 +72,7 @@
 			<ul>
 				<li>Saturated Fat 1.5g</li>
 				<li>8%</li>
-				<li>13%/li>
+				<li>13%</li>
 			</ul>
 			<ul>
 				<li>Trans Fat 0g</li>
